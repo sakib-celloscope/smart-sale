@@ -75,3 +75,15 @@ Now, you can use Tailwind CSS utility classes in your Angular components!
 ## 🎉 Done!
 Tailwind CSS is now successfully integrated with your Angular project! 🚀 Happy coding! 😃
 
+4. Build the Project for Production
+sh
+Copy
+Edit
+ng build --configuration production --base-href "/smart-bill/"
+Note: Replace /smart-bill/ with your repository name.
+
+5. Deploy to GitHub Pages
+sh
+Copy
+Edit
+npx angular-cli-ghpages --dir=docs

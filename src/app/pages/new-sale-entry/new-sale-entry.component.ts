@@ -16,24 +16,10 @@ export class NewSaleEntryComponent {
   handlePurchaseFormAction(event: any): void {
     if (event.action === 'purchase') {
       this.purchaseDetails = event.value;
-      console.log(event.value, 'from parent');
 
-      // Wait for the view to update before printing
       setTimeout(() => {
-        this.printInvoice();
-      }, 300);
-    }
-  }
-
-  printInvoice(): void {
-    const printContent = document.getElementById('invoice-print-section');
-    const originalContent = document.body.innerHTML;
-
-    if (printContent) {
-      document.body.innerHTML = printContent.innerHTML;
-      window.print();
-      document.body.innerHTML = originalContent;
-      window.location.reload();
+        window.print();
+      }, 1000);
     }
   }
 }

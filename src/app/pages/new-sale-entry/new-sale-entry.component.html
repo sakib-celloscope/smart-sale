@@ -1,2 +1,7 @@
-<app-generate-invoice (actionEmitter)="handlePurchaseFormAction($event)"></app-generate-invoice>
-<app-preview-invoice [purchaseDetails]="purchaseDetails"></app-preview-invoice>
+<div class="do-not-print">
+    <app-generate-invoice (actionEmitter)="handlePurchaseFormAction($event)"></app-generate-invoice>
+</div>
+
+<div class="print hidden">
+    <app-preview-invoice [purchaseDetails]="purchaseDetails"></app-preview-invoice>
+</div>

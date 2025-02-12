@@ -225,11 +225,6 @@ export class GenerateInvoiceComponent implements OnInit {
         unit_price: null,
         total_price: null,
       });
-
-      this._notificationService.success(
-        'Success!',
-        'Sales entry submitted successfully.'
-      );
     } else {
       this._notificationService.warning(
         'Warning!',
